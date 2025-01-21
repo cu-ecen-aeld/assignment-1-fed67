@@ -20,7 +20,7 @@ void test_validate_my_username()
      */
 
     char * username_conf = malloc_username_from_conf_file();
-    char * my_user = my_username();
+    const char * my_user = my_username();
 
     TEST_ASSERT_EQUAL_STRING_MESSAGE(my_user, username_conf, "usernames match");
     //TEST_ASSERT_TRUE_MESSAGE(false,"AESD students, please fix me!");
