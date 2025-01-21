@@ -21,4 +21,5 @@ printf $writestr > $writefile
 
 if [ $? -lt 0 ]; then
     echo exited with error $?
+    exit 1
 fi
