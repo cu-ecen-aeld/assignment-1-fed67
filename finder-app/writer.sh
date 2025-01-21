@@ -17,7 +17,7 @@ if [ ! -e $writefile ]; then
     touch $writefile
 fi
 
-printf $writestr >> $writefile
+printf $writestr > $writefile
 
 if [ $? -lt 0 ]; then
     echo exited with error $?
