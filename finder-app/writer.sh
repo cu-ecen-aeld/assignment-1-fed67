@@ -13,7 +13,7 @@ if [ ! -e $dir  ]; then
     mkdir -p $dir
 fi
 
-if [ -e $writefile ]; then 
+if [ ! -e $writefile ]; then 
     touch $writefile
 fi
 
